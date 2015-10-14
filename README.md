@@ -25,7 +25,7 @@ Synopsis
 ========
 
 ```lua
-    lua_package_path "/path/to/lua-resty-kafka/lib/?.lua;;";
+    lua_package_path "/path/to/lua-resty-kafka/?.lua;;";
 
     server {
         location /test {
@@ -278,7 +278,7 @@ tree to ngx_lua's LUA_PATH search path, as in
 ```nginx
     # nginx.conf
     http {
-        lua_package_path "/path/to/lua-resty-kafka/lib/?.lua;;";
+        lua_package_path "/path/to/lua-resty-kafka/?.lua;;";
         ...
     }
 ```
